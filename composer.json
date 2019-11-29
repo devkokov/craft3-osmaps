@@ -1,0 +1,44 @@
+{
+    "name": "devkokov/craft3-osmaps",
+    "description": "Integration with the Ordnance Survey Maps API",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "os maps",
+        "ordnance survey"
+    ],
+    "support": {
+        "docs": "https://github.com/devkokov/craft3-osmaps/blob/master/README.md",
+        "issues": "https://github.com/devkokov/craft3-osmaps/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dimitar Kokov",
+            "homepage": "https://github.com/devkokov"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "DevKokov\\OSMaps\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "OS Maps",
+        "handle": "os-maps",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/devkokov/craft3-osmaps/master/CHANGELOG.md",
+        "components": {
+            "osMapsService": "DevKokov\\OSMaps\\Services\\OSMapsService"
+        },
+        "class": "DevKokov\\OSMaps\\OSMaps"
+    }
+}
