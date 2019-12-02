@@ -11,6 +11,12 @@
 namespace DevKokov\OSMaps\Services;
 
 use craft\base\Component;
+use GuzzleHttp\Client;
+use Proxy\Adapter\Guzzle\GuzzleAdapter;
+use Proxy\Filter\RemoveEncodingFilter;
+use Proxy\Proxy;
+use Psr\Http\Message\ResponseInterface;
+use Zend\Diactoros\ServerRequestFactory;
 
 /**
  * OsMapsService Service
@@ -23,4 +29,18 @@ use craft\base\Component;
  */
 class OSMapsService extends Component
 {
+    const ROUTE_WMTS = 'https://api2.ordnancesurvey.co.uk/mapping_api/v1/service/wmts';
+
+    /**
+     * @param string $toUrl
+     * @return ResponseInterface
+     */
+    public function route($toUrl)
+    {
+        $guzzle = new Client();
+        $proxy = new Proxy(new GuzzleAdapter($guzzle));
+        $proxy->filter(new RemoveEncodingFilter());
+        $request = ServerRequestFactory::fromGlobals();
+        return $proxy->forward($request)->to($toUrl);
+    }
 }

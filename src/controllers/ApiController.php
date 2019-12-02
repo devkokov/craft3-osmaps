@@ -8,9 +8,10 @@
  * @copyright Copyright (c) 2019 Dimitar Kokov
  */
 
-namespace DevKokov\OSMaps\Controllers;
+namespace DevKokov\OSMaps\controllers;
 
 use craft\web\Controller;
+use DevKokov\OSMaps\OSMaps;
 
 /**
  * API Controller
@@ -23,16 +24,18 @@ use craft\web\Controller;
  */
 class ApiController extends Controller
 {
-    protected $allowAnonymous = ['index'];
+    protected $allowAnonymous = true;
 
     /**
-     * Handle a request going to our plugin's index action URL
-     * e.g.: actions/os-maps/api
+     * Proxy requests going to OS Maps WMTS service
+     * e.g.: actions/os-maps/api/wmts
      *
      * @return mixed
      */
-    public function actionIndex()
+    public function actionWmts()
     {
-        return 'Hello World';
+        return OSMaps::$plugin->osMapsService->route(
+            OSMaps::$plugin->osMapsService::ROUTE_WMTS
+        );
     }
 }

@@ -16,9 +16,7 @@ use DevKokov\OSMaps\Models\Settings;
 
 use Craft;
 use craft\base\Plugin;
-use craft\web\UrlManager;
 use craft\web\twig\variables\CraftVariable;
-use craft\events\RegisterUrlRulesEvent;
 
 use yii\base\Event;
 
@@ -42,15 +40,6 @@ class OSMaps extends Plugin
     {
         parent::init();
         self::$plugin = $this;
-
-        // Register our site routes
-        Event::on(
-            UrlManager::class,
-            UrlManager::EVENT_REGISTER_SITE_URL_RULES,
-            function (RegisterUrlRulesEvent $event) {
-                $event->rules['siteActionTrigger1'] = 'os-maps/api';
-            }
-        );
 
         // Register our variables
         Event::on(
