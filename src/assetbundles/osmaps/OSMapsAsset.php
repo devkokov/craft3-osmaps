@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2019 Dimitar Kokov
  */
 
-namespace DevKokov\OSMaps\AssetBundles\OSMaps;
+namespace DevKokov\OSMaps\assetbundles\OSMaps;
 
 use craft\web\AssetBundle;
 
@@ -28,14 +28,17 @@ class OSMapsAsset extends AssetBundle
      */
     public function init()
     {
-        $this->sourcePath = "@devkokov/osmaps/assetbundles/osmaps";
+        $this->sourcePath = "@DevKokov/OSMaps/AssetBundles/osmaps/resources";
 
         $this->js = [
-            'js/leaflet.js'
+            'leaflet.js',
+            'proj4-compressed.js',
+            'proj4leaflet.js',
+            'osMaps.js'
         ];
 
         $this->css = [
-            'css/leaflet.css'
+            'leaflet.css'
         ];
 
         parent::init();

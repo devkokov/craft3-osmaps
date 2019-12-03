@@ -1,6 +1,6 @@
 {
     "name": "devkokov/craft3-osmaps",
-    "description": "Integration with the Ordnance Survey Maps API",
+    "description": "Allows you to display Ordnance Survey maps on your Craft CMS website.",
     "type": "craft-plugin",
     "version": "1.0.0",
     "keywords": [

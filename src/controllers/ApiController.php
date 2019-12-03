@@ -10,7 +10,9 @@
 
 namespace DevKokov\OSMaps\controllers;
 
+use Craft;
 use craft\web\Controller;
+use craft\web\Response;
 use DevKokov\OSMaps\OSMaps;
 
 /**
@@ -30,12 +32,20 @@ class ApiController extends Controller
      * Proxy requests going to OS Maps WMTS service
      * e.g.: actions/os-maps/api/wmts
      *
-     * @return mixed
+     * @return string
      */
     public function actionWmts()
     {
-        return OSMaps::$plugin->osMapsService->route(
-            OSMaps::$plugin->osMapsService::ROUTE_WMTS
-        );
+        $response = OSMaps::$plugin->osMapsService->routeWmts();
+
+        $code = $response->getStatusCode();
+        Craft::$app->getResponse()->setStatusCode($code);
+
+        if ($code == 200) {
+            Craft::$app->getResponse()->format = Response::FORMAT_RAW;
+            Craft::$app->getResponse()->getHeaders()->set('content-type', 'image/png');
+        }
+
+        return (string) $response->getBody();
     }
 }

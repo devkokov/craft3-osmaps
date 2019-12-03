@@ -22,3 +22,11 @@
     name: 'apiKey',
     value: settings['apiKey']})
 }}
+
+{{ forms.textField({
+    label: 'Max Zoom Level',
+    instructions: 'Enter the maximum zoom level you are allowed to use by OS. Usually 10 when using EPSG:27700 and you are not allowed to display the OS MasterMap Topography layer.',
+    id: 'maxZoomLevel',
+    name: 'maxZoomLevel',
+    value: settings['maxZoomLevel']})
+}}

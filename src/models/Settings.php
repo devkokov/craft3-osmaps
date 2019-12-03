@@ -24,12 +24,15 @@ use craft\base\Model;
 class Settings extends Model
 {
     public $apiKey = '';
+    public $maxZoomLevel = 10;
 
     public function rules()
     {
         return [
             ['apiKey', 'string'],
             ['apiKey', 'default', 'value' => ''],
+            ['maxZoomLevel', 'integer'],
+            ['maxZoomLevel', 'default', 'value' => 10],
         ];
     }
 }
