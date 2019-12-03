@@ -97,7 +97,10 @@ The Leaflet library (`L` object in JS) is also globally exposed should you wish 
 
 ## Useful resources
 
-- 
+- https://apidocs.os.uk/docs/os-maps-wmts
+- https://leafletjs.com/reference-1.0.3.html
+- https://github.com/kartena/Proj4Leaflet
+- https://epsg.io/27700
 
 ---
 
