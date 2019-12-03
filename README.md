@@ -95,6 +95,22 @@ The function returns a standard Leaflet Map object. Do with it as you wish.
 
 The Leaflet library (`L` object in JS) is also globally exposed should you wish to use it e.g. for adding markers or manipulating the map.
 
+## A note on performance
+
+We are proxying all tile requests via the plugin (Craft) in order to keep the OS API key hidden from the public.
+This isn't the best approach from a performance perspective, however it is required by OS.
+
+To illustrate this:
+
+Map (front-end) <--> OS Maps Plugin (Craft) <--> OS Maps API
+
+When users interact with a map (zooming/panning) this will trigger lots of requests to your server - one request for each tile to be more precise!
+If you have lots of users and lots of maps on your site, this could become a problem!
+
+A possible solution would be to place your website over a CDN e.g. CloudFlare and enable full-page caching on all requests to `/actions/os-maps/api/*`, where `/actions/` is your [actionTrigger](https://docs.craftcms.com/v3/config/config-settings.html#actiontrigger) config setting (`actions` by default). 
+
+Just note that you'd have to clear the CDN cache when/if OS update any tiles.
+
 ## Useful resources
 
 - https://apidocs.os.uk/docs/os-maps-wmts
