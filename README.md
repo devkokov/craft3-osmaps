@@ -50,7 +50,7 @@ Add the following to your twig template and modify where necessary.
 {% endjs %}
 ```
 
-See the [Leaflet Documentation](https://leafletjs.com/reference-0.7.7.html) for reference on using the `L` JavaScript object.
+See the [Leaflet Documentation](https://leafletjs.com/reference-1.0.3.html) for reference on using the `L` JavaScript object.
 
 Note that the `createOSMap()` function returns a Leaflet Map object.
 
@@ -94,5 +94,11 @@ The JavaScript function `createOSMap()` accepts the following parameters:
 The function returns a standard Leaflet Map object. Do with it as you wish.
 
 The Leaflet library (`L` object in JS) is also globally exposed should you wish to use it e.g. for adding markers or manipulating the map.
+
+## Useful resources
+
+- 
+
+---
 
 Brought to you by [Dimitar Kokov](https://github.com/devkokov)

@@ -23,13 +23,14 @@ function createOSMap(id, tileUrl, tileLayerOptions, mapOptions, crs) {
     var
         mapOptionsDefault = {
             crs: crs,
-            continuousWorld: true,
-            maxBounds: [[49.79, -8.82], [60.94, 1.92]]
+            maxBounds: [[49.7, -9.5], [60.94, 3]],
+            maxBoundsViscosity: 1
         },
         tileLayerOptionsDefault = {
             maxZoom: 20,
             minZoom: 0,
-            continuousWorld: true,
+            noWrap: true,
+            bounds: [[49.79, -8.82], [60.94, 1.92]],
             attribution: '© Crown copyright and database rights 2019 OS 100050727. Use of this data is subject to terms and conditions.'
         };
 
@@ -49,6 +50,7 @@ function createOSMap(id, tileUrl, tileLayerOptions, mapOptions, crs) {
         layer = new L.tileLayer(tileUrl, tileLayerOptions);
 
     map.addLayer(layer);
+    map.attributionControl.setPrefix(false);
 
     return map;
 }
