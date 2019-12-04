@@ -2,7 +2,7 @@
     "name": "devkokov/craft3-osmaps",
     "description": "Allows you to display Ordnance Survey maps on your Craft CMS website.",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "craft",
         "cms",
