@@ -28,7 +28,7 @@ class OSMapsAsset extends AssetBundle
      */
     public function init()
     {
-        $this->sourcePath = "@DevKokov/OSMaps/AssetBundles/osmaps/resources";
+        $this->sourcePath = "@DevKokov/OSMaps/assetbundles/osmaps/resources";
 
         $this->js = [
             'leaflet.js',
