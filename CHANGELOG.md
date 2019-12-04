@@ -7,3 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## 1.0.0 - 2019-12-04
 ### Added
 - Initial release
+
+## 1.0.1 - 2019-12-04
+### Fixed
+- Fixed error "InvalidArgumentException: The file or directory to be published does not exist" caused by Craft unable to find the resources folder of our AssetBundle
