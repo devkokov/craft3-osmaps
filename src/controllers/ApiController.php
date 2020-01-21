@@ -8,12 +8,12 @@
  * @copyright Copyright (c) 2019 Burnthebook Ltd.
  */
 
-namespace DevKokov\OSMaps\controllers;
+namespace Burnthebook\OSMaps\controllers;
 
 use Craft;
 use craft\web\Controller;
 use craft\web\Response;
-use DevKokov\OSMaps\OSMaps;
+use Burnthebook\OSMaps\OSMaps;
 
 /**
  * API Controller

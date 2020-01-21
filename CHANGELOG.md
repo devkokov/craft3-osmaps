@@ -11,3 +11,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## 1.0.1 - 2019-12-04
 ### Fixed
 - Fixed error "InvalidArgumentException: The file or directory to be published does not exist" caused by Craft unable to find the resources folder of our AssetBundle
+
+## 1.1.0 - 2020-01-21
+### Changed
+- Changed attribution to Burnthebook Ltd.
+- Changed namespaces to Burnthebook\OSMaps
+- Moved repository to https://github.com/Burnthebook/craft3-osmaps
+- Moved composer package to burnthebook/craft3-osmaps

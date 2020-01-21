@@ -16,7 +16,7 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-       composer require devkokov/craft3-osmaps
+       composer require burnthebook/craft3-osmaps
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for OS Maps.
 
@@ -31,7 +31,7 @@ To install the plugin, follow these instructions.
 Add the following to your twig template and modify where necessary.
 
 ```twig
-{% do view.registerAssetBundle("DevKokov\\OSMaps\\assetbundles\\OSMaps\\OSMapsAsset") %}
+{% do view.registerAssetBundle("Burnthebook\\OSMaps\\assetbundles\\OSMaps\\OSMapsAsset") %}
 
 {% set tileUrl = craft.osMaps.getApiUrl() %}
 {% set maxZoomLevel = craft.osMaps.getMaxZoomLevel() %}

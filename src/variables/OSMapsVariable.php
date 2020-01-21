@@ -8,11 +8,11 @@
  * @copyright Copyright (c) 2019 Burnthebook Ltd.
  */
 
-namespace DevKokov\OSMaps\Variables;
+namespace Burnthebook\OSMaps\Variables;
 
 use craft\helpers\Template;
 use craft\helpers\UrlHelper;
-use DevKokov\OSMaps\OSMaps;
+use Burnthebook\OSMaps\OSMaps;
 
 /**
  * OS Maps Variable

@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2019 Burnthebook Ltd.
  */
 
-namespace DevKokov\OSMaps\assetbundles\OSMaps;
+namespace Burnthebook\OSMaps\assetbundles\OSMaps;
 
 use craft\web\AssetBundle;
 
@@ -28,7 +28,7 @@ class OSMapsAsset extends AssetBundle
      */
     public function init()
     {
-        $this->sourcePath = "@DevKokov/OSMaps/assetbundles/osmaps/resources";
+        $this->sourcePath = "@Burnthebook/OSMaps/assetbundles/osmaps/resources";
 
         $this->js = [
             'leaflet.js',

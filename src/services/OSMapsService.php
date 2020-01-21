@@ -8,10 +8,10 @@
  * @copyright Copyright (c) 2019 Burnthebook Ltd.
  */
 
-namespace DevKokov\OSMaps\Services;
+namespace Burnthebook\OSMaps\Services;
 
 use craft\base\Component;
-use DevKokov\OSMaps\OSMaps;
+use Burnthebook\OSMaps\OSMaps;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\Request;

@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2019 Burnthebook Ltd.
  */
 
-namespace DevKokov\OSMaps\Models;
+namespace Burnthebook\OSMaps\Models;
 
 use craft\base\Model;
 

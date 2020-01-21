@@ -8,11 +8,11 @@
  * @copyright Copyright (c) 2019 Burnthebook Ltd.
  */
 
-namespace DevKokov\OSMaps;
+namespace Burnthebook\OSMaps;
 
-use DevKokov\OSMaps\Services\OSMapsService as OsMapsServiceService;
-use DevKokov\OSMaps\Variables\OSMapsVariable;
-use DevKokov\OSMaps\Models\Settings;
+use Burnthebook\OSMaps\Services\OSMapsService as OsMapsServiceService;
+use Burnthebook\OSMaps\Variables\OSMapsVariable;
+use Burnthebook\OSMaps\Models\Settings;
 
 use Craft;
 use craft\base\Plugin;
