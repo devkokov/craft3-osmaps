@@ -120,4 +120,4 @@ Just note that you'd have to clear the CDN cache when/if OS update any tiles.
 
 ---
 
-Brought to you by [Dimitar Kokov](https://github.com/devkokov)
+Brought to you by [Burnthebook](https://www.burnthebook.co.uk)

@@ -4,8 +4,8 @@
  *
  * Integration with the Ordnance Survey Maps API
  *
- * @link      https://github.com/devkokov
- * @copyright Copyright (c) 2019 Dimitar Kokov
+ * @link      https://github.com/Burnthebook
+ * @copyright Copyright (c) 2019 Burnthebook Ltd.
  */
 
 namespace DevKokov\OSMaps\assetbundles\OSMaps;
