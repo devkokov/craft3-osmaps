@@ -24,3 +24,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Updated the API URL
 - Removed jenssegers/proxy
 - Updated Composer to version 2
+
+## 1.2.1 - 2021-04-19
+### Changed
+- sourcepath in assetbundles/OSMaps/OSMapsAsset wasn't changed correctly 
