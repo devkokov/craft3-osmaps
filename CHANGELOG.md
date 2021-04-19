@@ -28,3 +28,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## 1.2.1 - 2021-04-19
 ### Changed
 - sourcepath in assetbundles/OSMaps/OSMapsAsset wasn't changed correctly 
+
+## 1.2.2 - 2021-04-19
+### Changed
+- added laminas/laminas-diactoros as dependency 
