@@ -23,3 +23,4 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Changed
 - Updated the API URL
 - Removed jenssegers/proxy
+- Updated Composer to version 2

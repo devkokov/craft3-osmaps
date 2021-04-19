@@ -30,7 +30,6 @@ use Zend\Diactoros\ServerRequestFactory;
  */
 class OSMapsService extends Component
 {
-    // const WMTS_URL = 'https://api2.ordnancesurvey.co.uk/mapping_api/v1/service/wmts';
     const WMTS_URL = 'https://api.os.uk/maps/raster/v1/wmts';
 
     /**
