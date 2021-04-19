@@ -18,3 +18,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Changed namespaces to Burnthebook\OSMaps
 - Moved repository to https://github.com/Burnthebook/craft3-osmaps
 - Moved composer package to burnthebook/craft3-osmaps
+
+## 1.2.0 - 2021-04-19
+### Changed
+- Updated the API URL
+- Removed jenssegers/proxy
+- Updated Composer to version 2

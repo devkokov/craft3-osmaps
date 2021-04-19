@@ -16,9 +16,6 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
-use Proxy\Adapter\Guzzle\GuzzleAdapter;
-use Proxy\Filter\RemoveEncodingFilter;
-use Proxy\Proxy;
 use Psr\Http\Message\ResponseInterface;
 use Zend\Diactoros\ServerRequestFactory;
 
@@ -33,17 +30,13 @@ use Zend\Diactoros\ServerRequestFactory;
  */
 class OSMapsService extends Component
 {
-    const WMTS_URL = 'https://api2.ordnancesurvey.co.uk/mapping_api/v1/service/wmts';
+    const WMTS_URL = 'https://api.os.uk/maps/raster/v1/wmts';
 
     /**
      * @return ResponseInterface
      */
     public function routeWmts()
     {
-        $guzzle = new Client();
-        $proxy = new Proxy(new GuzzleAdapter($guzzle));
-        $proxy->filter(new RemoveEncodingFilter());
-
         $currentRequest = ServerRequestFactory::fromGlobals();
 
         $uri = (new Uri())->withQuery($currentRequest->getUri()->getQuery());
@@ -70,7 +63,8 @@ class OSMapsService extends Component
         $request = new Request($currentRequest->getMethod(), $uri);
 
         try {
-            $response = $proxy->forward($request)->to(self::WMTS_URL);
+            $client = new Client();
+            $response = $client->request('GET', self::WMTS_URL . $uri);
         } catch (RequestException $e) {
             $response = $e->getResponse();
         }
