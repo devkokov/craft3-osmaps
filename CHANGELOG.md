@@ -36,3 +36,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## 1.2.3 - 2021-06-15
 ### Changed
 - namespaces now comply with PSR4 autoloading standards 
+
+## 1.2.4 - 2021-06-15
+### Changed
+- namespaces correctly named in OSMaps.php 
