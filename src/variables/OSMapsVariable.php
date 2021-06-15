@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2019 Burnthebook Ltd.
  */
 
-namespace Burnthebook\OSMaps\Variables;
+namespace Burnthebook\OSMaps\variables;
 
 use craft\helpers\Template;
 use craft\helpers\UrlHelper;

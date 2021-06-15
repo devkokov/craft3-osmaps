@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2019 Burnthebook Ltd.
  */
 
-namespace Burnthebook\OSMaps\Services;
+namespace Burnthebook\OSMaps\services;
 
 use craft\base\Component;
 use Burnthebook\OSMaps\OSMaps;
