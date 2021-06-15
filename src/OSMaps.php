@@ -10,9 +10,9 @@
 
 namespace Burnthebook\OSMaps;
 
-use Burnthebook\OSMaps\Services\OSMapsService as OsMapsServiceService;
-use Burnthebook\OSMaps\Variables\OSMapsVariable;
-use Burnthebook\OSMaps\Models\Settings;
+use Burnthebook\OSMaps\services\OSMapsService as OsMapsServiceService;
+use Burnthebook\OSMaps\variables\OSMapsVariable;
+use Burnthebook\OSMaps\models\Settings;
 
 use Craft;
 use craft\base\Plugin;
