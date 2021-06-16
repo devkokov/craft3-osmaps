@@ -40,3 +40,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## 1.2.4 - 2021-06-15
 ### Changed
 - namespaces correctly named in OSMaps.php 
+
+## 1.2.5 - 2021-06-16
+### Changed
+- services in composer.json should be lowercase 
