@@ -1,10 +1,16 @@
-# OS Maps plugin for Craft CMS 3.x
+# OS Maps plugin for Craft CMS 4.x
 
 Allows you to display Ordnance Survey maps on your Craft CMS website.
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
+This plugin requires [PHP](https://www.php.net/) 7.4 - 8.2 and supports [Craft CMS](https://www.craftcms.com/) 3.x and 4.x.
+
+| OS Maps  | Craft 3            | Craft 4            |
+|----------|--------------------|--------------------|
+| 1.x      | :white_check_mark: | :x:                |
+| 2.x      | :x:                | :white_check_mark: |
+
 
 ## Installation
 
