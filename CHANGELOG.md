@@ -44,3 +44,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## 1.2.5 - 2021-06-16
 ### Changed
 - services in composer.json should be lowercase 
+
+## 2.0.0 - 2023-05-25
+- Craft 4 - initial compatibility
