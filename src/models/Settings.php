@@ -26,7 +26,7 @@ class Settings extends Model
     public $apiKey = '';
     public $maxZoomLevel = 10;
 
-    public function rules()
+    public function rules() : array
     {
         return [
             ['apiKey', 'string'],
