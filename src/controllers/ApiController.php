@@ -26,7 +26,7 @@ use Burnthebook\OSMaps\OSMaps;
  */
 class ApiController extends Controller
 {
-    protected $allowAnonymous = true;
+    protected array|int|bool $allowAnonymous = true;
 
     /**
      * Proxy requests going to OS Maps WMTS service
