@@ -34,7 +34,7 @@ class ApiController extends Controller
      *
      * @return string
      */
-    public function actionWmts()
+    public function actionWmts() : ?string
     {
         $response = OSMaps::$plugin->osMapsService->routeWmts();
 
