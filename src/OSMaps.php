@@ -35,7 +35,7 @@ class OSMaps extends Plugin
     /** @var OSMaps */
     public static $plugin;
 
-    public $schemaVersion = '1.0.0';
+    public string $schemaVersion = '1.0.0';
 
     public function init()
     {
@@ -68,7 +68,7 @@ class OSMaps extends Plugin
      *
      * @return Settings
      */
-    protected function createSettingsModel()
+    protected function createSettingsModel() : ?Settings
     {
         return new Settings();
     }
@@ -82,7 +82,7 @@ class OSMaps extends Plugin
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    protected function settingsHtml(): string
+    protected function settingsHtml(): ?string
     {
         return Craft::$app->view->renderTemplate(
             'os-maps/settings',
