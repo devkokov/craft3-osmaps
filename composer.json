@@ -2,7 +2,7 @@
     "name": "burnthebook/craft3-osmaps",
     "description": "Allows you to display Ordnance Survey maps on your Craft CMS website.",
     "type": "craft-plugin",
-    "version": "1.2.5",
+    "version": "2.0.0",
     "keywords": [
         "craft",
         "cms",
@@ -26,10 +26,15 @@
         "name": "Dimitar Kokov",
         "homepage": "https://github.com/Burnthebook",
         "role": "Developer"
+      },
+      {
+        "name": "Michael Burton",
+        "homepage": "https://github.com/Burnthebook",
+        "role": "Developer"
       }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0-RC1",
+        "craftcms/cms": "^3.0.0-RC1 | ^4.0.0",
         "laminas/laminas-diactoros": "^2.5"
     },
     "autoload": {

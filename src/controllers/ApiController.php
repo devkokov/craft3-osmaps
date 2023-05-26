@@ -26,7 +26,7 @@ use Burnthebook\OSMaps\OSMaps;
  */
 class ApiController extends Controller
 {
-    protected $allowAnonymous = true;
+    protected array|int|bool $allowAnonymous = true;
 
     /**
      * Proxy requests going to OS Maps WMTS service
@@ -34,7 +34,7 @@ class ApiController extends Controller
      *
      * @return string
      */
-    public function actionWmts()
+    public function actionWmts() : ?string
     {
         $response = OSMaps::$plugin->osMapsService->routeWmts();
 
