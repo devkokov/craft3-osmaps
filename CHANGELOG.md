@@ -47,3 +47,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## 2.0.0 - 2023-05-25
 - Craft 4 - initial compatibility
+
+## 3.0.0 - 2025-02-12
+- Craft 5 - initial compatibility
